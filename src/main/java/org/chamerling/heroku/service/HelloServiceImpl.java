@@ -19,7 +19,7 @@ public class HelloServiceImpl implements HelloService {
 
     @Override
     public void SayByeBye(Holder<String> output1, Holder<String> output2) {
-        output1 = new Holder<String> ("Bye");
-        output2 = new Holder<String> ("Bye");
+        output1.value = "Bye";
+        output2.value = "Bye";
     }
 }
