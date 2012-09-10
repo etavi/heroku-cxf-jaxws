@@ -3,6 +3,8 @@
  */
 package org.chamerling.heroku.service;
 
+import javax.xml.ws.Holder;
+
 /**
  * @author chamerling
  * 
@@ -16,8 +18,8 @@ public class HelloServiceImpl implements HelloService {
     }
 
     @Override
-    public void SayByeBye(String output1, String output2) {
-        output1 = "Bye";
-        output2 = "Bye";
+    public void SayByeBye(Holder<String> output1, Holder<String> output2) {
+        output1 = new Holder<String> ("Bye");
+        output2 = new Holder<String> ("Bye");
     }
 }
